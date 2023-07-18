@@ -130,6 +130,47 @@ nav span {
     max-height: 510px;
 }
 
+/* online games part design */
+.online{
+    margin: 0px 100px;
+}
+.online-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0B0223;
+    text-align: center;
+}
+.online-content h2 span{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.online-content p{
+    color: #534C64;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+    margin-bottom: 36px;
+}
+.online-img{
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+}
+.online-img img{
+    max-width: 256px;
+}
+.online-img figcaption{
+    margin-top: 5px;
+    margin-bottom: 90px;
+    color: #534C64;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2rem; /* 150% */
+}
 
 
 
