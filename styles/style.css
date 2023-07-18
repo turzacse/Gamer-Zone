@@ -8,9 +8,7 @@
 
 
 /* navigation ber styles */
-header {
-    
-}
+
 
 nav {
     display: flex;
@@ -96,7 +94,7 @@ nav span{
 .banner-content p{
     margin-bottom: 13px;
     color: #534C64;
-    font-size: .935rem
+    font-size: .935rem;
     font-weight: 500;
 }
 .banner-content button{
