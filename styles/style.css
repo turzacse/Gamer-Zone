@@ -173,6 +173,36 @@ nav span {
 }
 
 
+/* hover image part  */
+
+.img-container{
+    position: relative;
+    display: inline-block;
+}
+.img-container:hover img {
+    filter: blur(5px);
+  }
+
+.img-container .watch-icon{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0s ease;
+    z-index: 1;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.watch-icon i{
+    font-size: 3rem;
+    color: white;
+}
+
+.img-container:hover .watch-icon{
+    opacity: 1;
+}
 
 /* footer section design  */
 footer {
