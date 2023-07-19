@@ -129,61 +129,131 @@ nav span {
     align-items: end;
     max-height: 510px;
 }
+/* main section */
 
-/* online games part design */
-.online{
-    margin: 0px 100px;
+/* play game section */
+.play-game{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-top: 90px;
 }
-.online-content h2{
-    font-size: 3rem;
-    font-weight: 700;
-    color: #0B0223;
+.play-game .game-content{
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 120px;
+    background-color: #FFF;
     text-align: center;
 }
-.online-content h2 span{
+.game-content h2{
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 60px; /* 125% */
+}
+.game-content h2 span{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.online-content p{
+
+.game-content p{
+    text-align: right;
+    color: #534C64;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+
+.game-img .img1{
+    max-width: 470px;
+    max-height: 490px;
+   /* position: relative;
+   z-index: 1; */
+   position: relative;
+   top: 0;
+   left: 0;
+   z-index: 1;
+}
+.game-img .img2{
+    max-width: 238px;
+    max-height: 274px;
+   /* position: relative;
+   top: 40px;
+   left: 150px;
+   z-index: 2; */
+   position: relative;
+   bottom: 200px;
+   right: 100px;
+   z-index: 2;
+}
+/* online games part design */
+.online {
+    margin: 0px 100px;
+}
+
+.online-content h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0B0223;
+    text-align: center;
+}
+
+.online-content h2 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-content p {
     color: #534C64;
     text-align: center;
     font-size: 0.9rem;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
+    /* 166.667% */
     margin-bottom: 36px;
 }
-.online-img{
-    
+
+.online-img {
+
     display: flex;
     justify-content: space-between;
     gap: 18px;
 }
-.online-img img{
+
+.online-img img {
     max-width: 256px;
 }
-.online-img figcaption{
+
+.online-img figcaption {
     margin-top: 5px;
     margin-bottom: 90px;
     color: #534C64;
     font-size: 1rem;
     font-weight: 500;
-    line-height: 1.2rem; /* 150% */
+    line-height: 1.2rem;
+    /* 150% */
 }
 
 
 /* hover image part  */
 
-.img-container{
+.img-container {
     position: relative;
     display: inline-block;
 }
+
 .img-container:hover img {
     filter: blur(5px);
-  }
+}
 
-.img-container .watch-icon{
+.img-container .watch-icon {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -195,12 +265,13 @@ nav span {
     text-align: center;
     color: white;
 }
-.watch-icon i{
+
+.watch-icon i {
     font-size: 3rem;
     color: white;
 }
 
-.img-container:hover .watch-icon{
+.img-container:hover .watch-icon {
     opacity: 1;
 }
 
@@ -216,41 +287,47 @@ nav span {
     gap: 10px;
     justify-content: center;
     align-content: center;
+    text-align: center;
     margin: 0 auto;
-  }
+}
 
-  .box {
+
+.box {
     position: relative;
     text-align: center;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .box img {
+    width: 100%;
+}
+
+.box img {
     display: block;
     width: 60px;
     height: 60px;
     object-fit: cover;
     border-radius: 50%;
-  }
-  
-  .box p {
+}
+
+.box p {
     margin: 5px 0;
     color: #333;
     margin-left: 10px;
-  }
-  
-  .box:hover {
+}
+
+.box:hover {
     border: 2px solid #333;
     border-radius: 50px;
-  }
-  
-  .box:hover p {
-    color: #333;
-  }
-  
+}
+
+.box:hover p {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 
@@ -314,14 +391,17 @@ footer ul li {
 .midea-icon {
     margin: 0 550px;
 }
-.midea-icon i{
+
+.midea-icon i {
     gap: 40px;
     font-size: 1.8rem;
 }
-.terms{
+
+.terms {
     margin-top: 0px;
 }
-.copy{
+
+.copy {
     text-align: center;
     margin-top: 0px;
     padding-bottom: 100px;
