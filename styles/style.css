@@ -399,12 +399,11 @@ footer {
     background: #0B0223;
     color: #FFF;
     padding-top: 90px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .foot-logo {
     display: flex;
-
 }
 
 .foot-logo img {
@@ -529,6 +528,56 @@ footer ul li {
         margin-top: 0px;
         background-color: #FFF;
         text-align: center;
+        margin-bottom: 50px;
     }
+    .game-img{
+        margin: 0px;
+        align-items: center;
+        margin-left: 100px;
+    }
+    .games{
+        padding: 0px;
+        margin: 0px;
+        margin: 10px;
+    }
+    .container{
+        gap: 15px;
+    }
+    footer ul {
+        margin: 0;
+        padding: 0px;
+        margin: 20px;
+        justify-content: space-around;
+        align-items: center;
 
+    }
+    .footer-list{
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-list li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .midea-icon {
+        margin: 20px;
+        justify-content: center;
+        padding: 20px;
+    }
+    .midea-icon i{
+        padding: 20px;
+    }
+    .terms{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 10px ;
+        margin-bottom: 30px;
+    }
+    .terms li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
