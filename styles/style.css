@@ -170,6 +170,7 @@ nav span {
 
 .online-img img {
     max-width: 256px;
+    border: 0;
 }
 
 .online-img figcaption {
@@ -238,7 +239,7 @@ nav span {
     text-align: right;
     font-size: 2.5rem;
     font-weight: 700;
-    line-height: 60px; /* 125% */
+    line-height: 40px; /* 125% */
 }
 .game-content h2 span{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -264,6 +265,7 @@ nav span {
    top: 0;
    left: 0;
    z-index: 1;
+   width: 100%;
 }
 .game-img .img2{
     max-width: 238px;
@@ -276,6 +278,7 @@ nav span {
    bottom: 200px;
    right: 100px;
    z-index: 2;
+   width: 100%;
 }
 
 
@@ -291,30 +294,32 @@ nav span {
     margin: 0 auto;
 }
 
-
+.box p{
+    color: #0B0223;
+    font-size: .75rem;
+    font-weight: 600;
+    padding-left: 0px;
+    text-align: left;
+}
 .box {
     position: relative;
     text-align: center;
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
 .box img {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 50%;
+    margin: 0px;
 }
 
-.box p {
-    margin: 5px 0;
-    color: #333;
-    margin-left: 10px;
-}
 
 .box:hover {
     border: 2px solid #333;
@@ -365,17 +370,23 @@ footer span {
 }
 
 footer ul {
-    display: flex;
+    display:flex;
     justify-content: space-between;
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
     padding-bottom: 50px;
 }
-
+.footer-list{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.terms{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 footer ul li {
     list-style: none;
-
     justify-content: center;
     align-items: center;
 }
@@ -408,4 +419,104 @@ footer ul li {
     color: rgba(255, 255, 255, 0.60);
     font-size: 1rem;
     font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    *{
+        margin: 0px;
+    }
+    nav ,
+    .online-img,
+    .play-game
+    {
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    
+    .logo {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        margin: 10px;
+        padding: 0px;
+    }
+    .banner-content{
+        padding: 0px;
+        margin: 10px auto ;
+    }
+    .online-content{
+        margin: 20px auto;
+    }
+    .onine{
+        margin: 20 auto;
+    }
+    .online-img{
+       margin: 10px auto;
+    }
+    .play-game{
+        margin: 10 auto;
+        padding: 0;
+    }
+    .game-content h2{
+        font-size: 1.5rem;
+    }
+    .game-img{
+        margin-left: 50px;
+        margin-right: auto;
+    }
+    
+    .box img {
+        
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .box p{
+        font-size: .8rem;
+        margin-left: 5px;
+        text-align: left;
+    }
+
+    .container, .footer-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 20px;
+    }
+    .footer-list{
+        margin: 10px auto;
+        margin-left: 20px;
+        padding: 0;
+        gap: 24px;
+    }
+    .terms{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0;
+        padding: 0;
+        gap: 24px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    .midea-icon {
+        margin: 10px;
+        gap: 10px;
+    }
+    .midea-icon i{
+        padding: 0;
+        gap: 10px;
+    }
+
+
 }
