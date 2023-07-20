@@ -780,7 +780,7 @@ footer ul li {
   
     /* We are gamer section */
     .we-are-gamer {
-      flex-direction: column;
+      flex-direction: column-reverse;
       margin: 30px;
     }
   
