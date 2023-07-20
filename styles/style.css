@@ -358,11 +358,16 @@ nav span {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
-    justify-content: center;
+    /* justify-content: center;
     justify-self: auto;
     align-content: center;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto; */
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box p {
@@ -383,6 +388,9 @@ nav span {
     align-items: center;
     width: 100%;
     gap: 10px;
+}
+.box{
+    flex: 0 0 calc(15% - 10px);
 }
 
 .box img {
@@ -644,6 +652,7 @@ footer ul li {
     }
 
     .container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -848,6 +857,7 @@ footer ul li {
     }
   
     .container {
+      display: grid;
       grid-template-columns: repeat(3, 1fr);
     }
   
